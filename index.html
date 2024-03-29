@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Chakra+Petch:wght@300&family=Hedvig+Letters+Serif:opsz@12..24&family=IBM+Plex+Serif:wght@500&family=Nunito:wght@700&family=Pacifico&family=Roboto&family=Roboto+Condensed:wght@600&family=Ubuntu:wght@500;700&family=Whisper&display=swap');
+      </style>
+</head>
+<body class="bg-[#f1f8ff]">  
+<div class="w-[100vw] m-auto lg:w-[92vw]">   
+        <!-- navbar -->
+        
+        <nav class="navbar bg-[#0f172b] h-16 flex items-center sticky top-0 z-20">
+                <img src="knife.png" class="w-10 h-10  ml-3 fill-current " alt="">
+                <div class="logo text-[#fea115] font-bold text-3xl cursor-pointer pl-2">Restoran</div>
+            <div class="dropdown absolute top-16 invisible w-[100%] bg-[#0f172b] text-white list-none lg:flex 
+            lg:-top-1 lg:right-10 lg:items-center lg:bg-transparent lg:w-auto lg:visible ">
+                <div class="flex justify-center">
+                    <div class="hr w-[85%] h-[1px] bg-[#3e4454]"></div>
+                </div>
+                <li class="ele my-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">HOME</li>
+                <li class="ele py-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">ABOUT</li>
+                <li class="ele py-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">SERVICES</li>
+                <li class="ele py-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">MENU</li>
+                <li class="ele py-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">PAGES</li>
+                <li class="ele py-2 pl-4 font-bold cursor-pointer transition duration-500 hover:text-[#fea115]">CONTACT</li>
+                <button class="bg-[#fea115] ml-4 mt-2 mb-5 px-7 py-2 lg:mt-4 hover:bg-[#ecae50] transition duration-300">BOOK A TABLE</button>
+            </div>
+            <div class="hamburger border border-[#9496a0] absolute right-7 p-1 lg:hidden">
+                <div class="line w-5 m-[3px] px-2 h-1 bg-[#9496a0]"></div>
+                <div class="line w-5 m-[3px] px-2 h-1 bg-[#9496a0]"></div>
+                <div class="line w-5 m-[3px] px-2 h-1 bg-[#9496a0]"></div>
+            </div>
+        </nav>
+        
+        <!-- home page -->
+        <div class="w-[100%] bg-[url('home-bng.jpeg')] pb-2 bg-center bg-cover bg-blend-overlay bg-black/70">
+            <section class="flex w-[100%] pt-24 pb-20 lg:pl-5 items-center flex-col justify-center text-white lg:flex-row">
+                <div class="flex flex-col justify-center items-center w-1/2 lg:items-start">
+                    <h1 class=" text-center font-nunito font-bold text-3xl w-64 lg:text-start">Enjoy Our Delicious Meal</h1>
+                    <p class=" text-center w-[100%] my-6 lg:text-start lg:pr-6">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <button class="bg-[#fea115] px-7 py-2 mt-4 mb-20 w-44 hover:bg-[#ecae50] transition duration-300">BOOK A TABLE</button>
+                </div>
+                <img class=" animate-spin w-[280px] xl:p-5 xl:w-[580px] lg:w-[405px]" src="home1.png">
+            </section>
+        </div>
+    <!-- cards section -->
+    
+    <section class="cards flex justify-center flex-wrap pt-10 pb-10 items-center bg-[#f3f3f3]">
+        <div class="card w-64 h-56 mx-8 bg-white my-7 flex flex-col justify-center transition ease-out duration-700 hover:bg-[#fea115] hover:text-white ">
+            <img src="chef.png" class="w-10 h-10 ml-5 " alt=""> 
+            <h1 class="ml-5 font-bold font-nunito text-lg mt-2">Master Chefs</h1>
+            <p class="ml-5 pr-5">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="card w-64 h-56 mx-8 bg-white my-7 flex flex-col justify-center transition ease-out duration-700 hover:bg-[#fea115] hover:text-white ">
+            <img src="knife.png" class="w-10 h-10 ml-5 " alt="">
+            <h1 class="ml-5 font-bold font-nunito text-lg mt-2">Quality food</h1>
+            <p class="ml-5 pr-5">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="card w-64 h-56 mx-8 bg-white my-7 flex flex-col justify-center transition ease-out duration-700 hover:bg-[#fea115] hover:text-white ">
+            <img src="delivery.png" class="w-12 h-10 ml-5 " alt="">
+            <h1 class="ml-5 font-bold font-nunito text-lg mt-2 ">Online Food</h1>
+            <p class="ml-5 pr-5">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="card w-64 h-56 mx-8 bg-white my-7 flex flex-col justify-center transition ease-out duration-700 hover:bg-[#fea115] hover:text-white ">
+            <img src="24-7.png" class="w-10 h-10 ml-5 " alt="">
+            <h1 class="ml-5 font-bold font-nunito text-lg mt-2">24/7 Service</h1>
+            <p class="ml-5 pr-5">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+    </section>
+    
+    <!-- menu headings -->
+    
+    <section class="w-[100%] pt-4 flex flex-col items-center relative bg-white">
+        <div class="heading flex items-center justify-center">
+            <div class="line h-1 w-9 bg-[#fea115]"></div>
+            <h1 class="font-cursive text-[#fea115] text-2xl mx-2">Food Menu</h1>
+            <div class="line h-1 w-9 bg-[#fea115]"></div>
+        </div>
+        <h1 class="font-nunito font-extrabold text-3xl pb-3">Most Popular Items</h1>
+        <div class="choices relative flex flex-wrap justify-center">
+            <div class="choice cursor-pointer flex mx-3 my-4 relative">
+                <img src="cup.png" class="w-12 h-12 mx-2" alt="">
+                <div class="flex flex-col">
+                    <h1>Popular</h1>
+                    <h1 class="font-nunito font-bold">Breakfast</h1>
+                </div>
+                <div class="underline absolute invisible line w-32 -bottom-3 left-3 h-1 bg-[#fea115]"></div>
+            </div>
+            <div class="choice cursor-pointer flex mx-3 my-4 relative">
+                <img src="burger.png" class="w-12 h-12 mx-2" alt="">
+                <div class="flex flex-col">
+                    <h1>Special</h1>
+                    <h1 class="font-nunito font-bold">Lunch</h1>
+                </div>
+                <div class="underline absolute invisible line w-28 -bottom-3 left-3 h-1 bg-[#fea115]"></div>
+            </div>
+            <div class="choice cursor-pointer flex mx-3 my-4 relative">
+                <img src="knife.png" class="w-12 h-12 mx-2" alt="">
+                <div class="flex flex-col">
+                    <h1>Lovely</h1>
+                    <h1 class="font-nunito font-bold">Dinner</h1>
+                </div>
+                <div class="underline absolute invisible line w-28 -bottom-3 left-3 h-1 bg-[#fea115]"></div>
+            </div>
+            <div class="absolute w-[90%] h-[0.5px] bottom-1 bg-[#3e4454]"></div>
+        </div>
+    </section>
+    
+    <!-- menu items -->
+    
+    <section class="menu-items flex flex-wrap pl-3 pb-16 justify-center bg-white">
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food1.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold mr-4">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative  w-[500px] px-6 mt-8">
+            <img src="food2.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class=" text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food3.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food1.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food2.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food3.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food1.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+        <div class="flex relative w-[500px] px-6 mt-8">
+            <img src="food2.jpeg" class="w-20 h-20 mr-4">
+            <div class="flex flex-col">
+                <div class="flex justify-between">
+                    <h1 class="font-nunito text-xl font-bold">Chicken Burger</h1>
+                    <div class="text-[#fea115]">$115</div>
+                </div>
+                <p class="pt-2 text-[#fea115]">Ipsum ipsum clita erat amet dolor justo diam</p>
+            </div>
+            <div class="absolute w-[50%] h-[0.5px] top-8 right-12 bg-[#3e4454] xs:right-24"></div>
+        </div>
+    </section>
+
+    <!-- chefs section -->
+    
+    <section class="chefs flex flex-col items-center bg-[#f3f3f3] pb-14">
+        <div class="heading flex items-center justify-center mt-12">
+            <div class="line h-1 w-9 bg-[#fea115]"></div>
+            <h1 class="font-cursive text-[#fea115] text-2xl mx-2 ">Team Members</h1>
+            <div class="line h-1 w-9 bg-[#fea115]"></div>
+        </div>
+        <h1 class="font-nunito font-extrabold text-3xl pb-3">Our Master Chefs </h1>
+        <div class="flex flex-wrap justify-center items-center mt-8">
+            <div class="flex flex-col items-center px-8 m-6 bg-white transition-all ease-out duration-500">
+                <img src="team-1.jpg" class="rounded-full my-10 w-[210px]">
+                <h1 class="font-nunito font-extrabold text-xl">Full Name</h1>
+                <p class="mb-10">Designation</p>
+            </div>
+            <div class="flex flex-col items-center px-8 m-6 bg-white transition-all ease-out duration-500">
+                <img src="team-2.jpg" class="rounded-full my-10 w-[210px]">
+                <h1 class="font-nunito font-extrabold text-xl">Full Name</h1>
+                <p class="mb-10">Designation</p>
+            </div>
+            <div class="flex flex-col items-center px-8 m-6 bg-white transition-all ease-out duration-500">
+                <img src="team-3.jpg" class="rounded-full my-10 w-[210px]">
+                <h1 class="font-nunito font-extrabold text-xl">Full Name</h1>
+                <p class="mb-10">Designation</p>
+            </div>
+            <div class="flex flex-col items-center px-8 m-6 bg-white transition-all ease-out duration-500">
+                <img src="team-4.jpg" class="rounded-full my-10 w-[210px]">
+                <h1 class="font-nunito font-extrabold text-xl">Full Name</h1>
+                <p class="mb-10">Designation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="bg-[#0f172b] py-20">
+        <div class="flex flex-col justify-between pl-14 lg:pl-0 sm:flex-row">
+            <div class="flex flex-col mt-3 lg:ml-32">
+                <div class="flex items-center">
+                    <h1 class="font-cursive text-[#fea115] text-2xl mr-2 ">Company</h1>
+                    <div class="line h-1 w-12 mt-1 bg-[#fea115]"></div>
+                </div>
+                <ul class="text-white ">
+                    <li class="list-none my-4 font-bold">> About Us</li>
+                    <li class="list-none my-4 font-bold">> Contact us</li>
+                    <li class="list-none my-4 font-bold">> Reservation</li>
+                    <li class="list-none my-4 font-bold">> Privacy Policy</li>
+                    <li class="list-none my-4 font-bold">> Terms & Condition</li>
+                </ul>
+            </div>
+            <div class="flex flex-col mt-3">
+                <div class="flex items-center ">
+                    <h1 class="font-cursive text-[#fea115] text-2xl mx-2 ">Contact</h1>
+                    <div class="line h-1 w-12 mt-1 bg-[#fea115]"></div>
+                </div>
+                <div class="text-white font-bold m-2 mt-4">123 Street, New York, USA</div>
+                <div class="text-white font-bold m-2">+012 345 67890</div>
+                <div class="text-white font-bold m-2">info@example.com</div>
+            </div>
+            <div class="flex flex-col mt-3 lg:mr-32">
+                <div class="flex items-center">
+                    <h1 class="font-cursive text-[#fea115] text-2xl mx-2 ">Opening</h1>
+                    <div class="line h-1 w-12 mt-1 bg-[#fea115]"></div>
+                </div>
+                <h1 class="text-white font-bold m-2 mt-4">Monday - Saturday</h1>
+                <p class="text-white font-bold m-2">09AM - 09PM</p>
+                <h1 class="text-white font-bold m-2">Sunday</h1>
+                <p class="text-white font-bold m-2">10AM - 08PM</p>
+            </div>
+        </div>
+    </section>
+</div>   
+    </body>
+<script src="script.js"></script>
+</html>
